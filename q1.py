@@ -158,8 +158,20 @@ for i in range(N + 1):
     path = final_path[i]
     print(chr(ord('A') + path), end=' ')
 
+total_distances = 0
+for i in towns.values():
+    total_distances = total_distances + i
 
-# the running time of the algorithm is O(n!)
+print("\n", "Total distance in Km is equal to", total_distances, "km")
+
+
+#the running time of the algorithm is O(n!) Factorial Run Time
+
+"""
+    the running time of the algorithm is O(n!) (Factorial Run Time)
+   """
+
+
 
 # add test cities - matrix  - @brenda
 # add memoization - @modester
